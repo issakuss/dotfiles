@@ -24,5 +24,6 @@ Plugin 'scrooloose/nerdtree'
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'luochen1990/rainbow'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
-""vim +PluginInstall +qall
+"vim +PluginInstall +qall
