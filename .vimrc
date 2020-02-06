@@ -11,6 +11,7 @@ set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,(,{
 inoremap <silent> jj <ESC>
 set colorcolumn=80
 set clipboard+=unnamed
+set t_Co=256
 colorscheme molokai
 filetype plugin indent on
 
