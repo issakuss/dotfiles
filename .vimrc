@@ -21,6 +21,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/syntastic'
 let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_flake8_post_args = '--ignore=E402,E221'
 Plugin 'scrooloose/nerdtree'
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 Plugin 'yonchu/accelerated-smooth-scroll'
