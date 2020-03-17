@@ -1,6 +1,4 @@
 "" Basic settings
-set nocompatible
-set number
 set relativenumber
 set hlsearch
 set expandtab
@@ -19,13 +17,16 @@ filetype plugin indent on
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
+
 Plugin 'scrooloose/syntastic'
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_post_args = '--ignore=E402,E221,E241'
+
 Plugin 'scrooloose/nerdtree'
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
 Plugin 'yonchu/accelerated-smooth-scroll'
-Plugin 'luochen1990/rainbow'
-Plugin 'tpope/vim-fugitive'
+
 call vundle#end()
 "vim +PluginInstall +qall
+"Plugin 'tpope/vim-fugitive'
