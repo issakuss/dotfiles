@@ -6,6 +6,7 @@ set shiftwidth=4
 set tabstop=4
 set autoindent
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,(,{,[
+set encoding=utf-8
 inoremap <silent> jj <ESC>
 set colorcolumn=80
 set clipboard+=unnamed
