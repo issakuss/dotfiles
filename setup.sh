@@ -1,5 +1,2 @@
-DOT_FILES=(.vimrc .bash_profile)
-for file in ${DOT_FILES[@]}
-do
-    ln -s $HOME/dotfiles/$file $HOME/$file
-done
+ln -fs $HOME/dotfiles/.vimrc $HOME/.vimrc
+ln -fs $HOME/dotfiles/.bash_profile $HOME/.bash_profile
