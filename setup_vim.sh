@@ -1,4 +1,3 @@
-./setup_vim.sh
 mkdir -p .vim/bundle
 cd .vim
 git clone https://github.com/VundleVim/Vundle.vim.git bundle/Vundle.vim
