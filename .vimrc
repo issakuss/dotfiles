@@ -23,7 +23,7 @@ Plugin 'scrooloose/syntastic'
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_post_args = '--ignore=E402,E221,E241'
 
-Plugin 'scrooloose/nerdtree'
+Plugin 'preservim/nerdtree'
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 Plugin 'yonchu/accelerated-smooth-scroll'
