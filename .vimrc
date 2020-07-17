@@ -1,5 +1,6 @@
 "" Basic settings
 set relativenumber
+set number
 set hlsearch
 set expandtab
 set shiftwidth=4
@@ -7,7 +8,7 @@ set tabstop=4
 set autoindent
 set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,(,{,[
 set encoding=utf-8
-inoremap <silent> jj <ESC>
+inoremap <silent> jk <ESC>
 set colorcolumn=80
 set clipboard+=unnamed
 set t_Co=256
@@ -29,5 +30,3 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 Plugin 'yonchu/accelerated-smooth-scroll'
 
 call vundle#end()
-"vim +PluginInstall +qall
-"Plugin 'tpope/vim-fugitive'
