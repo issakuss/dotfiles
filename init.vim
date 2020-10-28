@@ -1,37 +1,8 @@
-"" --- functions ---
-function! Pyexe()
-    "https://qiita.com/sigma7641/items/7964ec41ed1e0cd87765
-    :let cwinid=win_getid()
-    :let fileName=expand('%')
-    :let outFileName="~pyOut"
-    :let bnr=bufnr(outFileName)
-    :let wids=win_findbuf(bnr)
-    if bnr == -1 || len(wids)==0
-        :autocmd QuitPre <buffer> exe(':bwipeout!') g:bnr
-        :exe 'rightbelow new' outFileName
-        :set buftype=nofile
-        :nmap <buffer> q <C-u>:bwipeout!<CR>
-        ":vertical resize 70
-    else
-        :let outWinid=wids[0]
-        :call win_gotoid(outWinid)
-    endif
-    exe("$read! python3") fileName
-    :redraw!
-    :call win_gotoid(cwinid)
-endfunction
-
-call plug#begin('~/.local/share/nvim/plugged')
-Plug 'tomasr/molokai'
-Plug 'vim-syntastic/syntastic'
-Plug 'preservim/nerdtree'
-Plug 'yonchu/accelerated-smooth-scroll'
-call plug#end()
-
-
 "" --- Basic settings ---
 inoremap <silent> jk <ESC>
 tnoremap jk <C-\><C-n>
+nnoremap <F5> :w<CR>:let pypath=expand("%")<CR>:split<CR>:term<CR>ipython3 <C-\><C-n>"=pypath<CR>pi<CR>
+nnoremap <F6> :split<CR>:resize 10<CR>:term<CR>iipython<CR>
 set relativenumber
 set number
 set hlsearch
@@ -44,7 +15,6 @@ set encoding=utf-8
 set colorcolumn=80
 set clipboard+=unnamed
 
-
 "" --- Plugin setting ---
 "tomasr/molokai
 colorscheme molokai
@@ -56,9 +26,3 @@ let g:syntastic_python_flake8_post_args = '--ignore=E402,E221,E241'
 
 "preservim/nerdtree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
-
-"Pyexe()
-nnoremap <F5> :w<CR>:call Pyexe()<CR>
-
-"IPython
-nnoremap <F6> :split<CR>:resize 10<CR>:term<CR>iipython<CR>
