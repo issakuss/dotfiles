@@ -24,6 +24,7 @@ set smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class,(,{
 set encoding=utf-8
 set colorcolumn=80
 set clipboard+=unnamed
+set splitright
 
 "" --- Plugin setting ---
 "tomasr/molokai
