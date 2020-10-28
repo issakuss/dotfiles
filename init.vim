@@ -1,3 +1,12 @@
+"" --- PlugIn ---
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'tomasr/molokai'
+Plug 'vim-syntastic/syntastic'
+Plug 'preservim/nerdtree'
+Plug 'yonchu/accelerated-smooth-scroll'
+call plug#end()
+
+
 "" --- Basic settings ---
 inoremap <silent> jk <ESC>
 tnoremap jk <C-\><C-n>
