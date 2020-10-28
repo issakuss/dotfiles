@@ -23,8 +23,6 @@ endfunction
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'tomasr/molokai'
-Plug 'szkny/SplitTerm'
-Plug 'szkny/Ipython'
 Plug 'vim-syntastic/syntastic'
 Plug 'preservim/nerdtree'
 Plug 'yonchu/accelerated-smooth-scroll'
@@ -63,4 +61,4 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 nnoremap <F5> :w<CR>:call Pyexe()<CR>
 
 "IPython
-nnoremap <F6> :Ipython<CR>
+nnoremap <F6> :split<CR>:resize 10<CR>:term<CR>iipython<CR>
