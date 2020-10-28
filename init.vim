@@ -4,6 +4,7 @@ Plug 'tomasr/molokai'
 Plug 'vim-syntastic/syntastic'
 Plug 'preservim/nerdtree'
 Plug 'yonchu/accelerated-smooth-scroll'
+Plug 'davidhalter/jedi-vim'
 call plug#end()
 
 
