@@ -1,4 +1,4 @@
-"" vim-plug
+"" --- functions ---
 function! Pyexe()
     "https://qiita.com/sigma7641/items/7964ec41ed1e0cd87765
     :let cwinid=win_getid()
@@ -30,7 +30,8 @@ Plug 'preservim/nerdtree'
 Plug 'yonchu/accelerated-smooth-scroll'
 call plug#end()
 
-"" Basic settings
+
+"" --- Basic settings ---
 inoremap <silent> jk <ESC>
 tnoremap jk <C-\><C-n>
 set relativenumber
@@ -45,15 +46,21 @@ set encoding=utf-8
 set colorcolumn=80
 set clipboard+=unnamed
 
-"" Plugin setting
+
+"" --- Plugin setting ---
 "tomasr/molokai
 colorscheme molokai
 set t_Co=256
+
 "vim-syntastic/syntastic
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_post_args = '--ignore=E402,E221,E241'
+
 "preservim/nerdtree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
 "Pyexe()
-inoremap = <F5> <Esc>:w<CR>:call Pyexe()<CR>
-nnoremap = <F5> :w<CR>:call Pyexe() <CR>
+nnoremap <F5> :w<CR>:call Pyexe()<CR>
+
+"IPython
+nnoremap <F6> :Ipython<CR>
