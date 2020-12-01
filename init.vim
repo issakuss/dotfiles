@@ -5,6 +5,8 @@ Plug 'vim-syntastic/syntastic'
 Plug 'preservim/nerdtree'
 Plug 'yonchu/accelerated-smooth-scroll'
 Plug 'davidhalter/jedi-vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 
@@ -37,3 +39,14 @@ let g:syntastic_python_flake8_post_args = '--ignore=E402,E221,E241'
 
 "preservim/nerdtree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
+
+"tpope/vim-fugitive
+nnoremap \gst :Gstatus<CR>
+nnoremap \gad :Gwrite<CR>
+nnoremap \gco :Gcommit<CR>
+nnoremap \gbl :Gblame<CR>
+
+"davidhalter/jedi-vim
+"autocmd FileType python setlocal completeopt-=preview
+set completeopt-=preview
+let g:jedi#completions_enabled = 0
