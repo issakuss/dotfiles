@@ -1,4 +1,6 @@
-mkdir -p $HOME/.config/nvim
-ln -fs $HOME/dotfiles/.bashrc $HOME/.bashrc
-ln -fs $HOME/dotfiles/.vimrc $HOME/.vimrc
-ln -fs $HOME/dotfiles/init.vim $HOME/.config/nvim/init.vim
+mkdir -p ~/dotfiles
+ln -sf ~/dotfiles/.zshrc ~/.zshrc
+ln -sf ~/dotfiles/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/.config ~/.config
+ln -s ~/dotfiles/.vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s ~/dotfiles/.vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
