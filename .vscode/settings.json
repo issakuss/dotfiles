@@ -13,5 +13,9 @@
             79
         ]
     },
-    "git.ignoreLegacyWarning": true
+    "git.ignoreLegacyWarning": true,
+    "files.watcherExclude": {
+        "**/.git/**": true,
+        "**/external/**": true
+      }
 }
