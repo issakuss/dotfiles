@@ -1,6 +1,7 @@
 {
     "window.zoomLevel": 1,
     "editor.smoothScrolling": true,
+    "editor.minimap.enabled": false, 
     "editor.lineNumbers": "relative",
     "vim.insertModeKeyBindings": [
         {
@@ -17,5 +18,9 @@
     "files.watcherExclude": {
         "**/.git/**": true,
         "**/external/**": true
-      }
+      },
+    "terminal.integrated.shellArgs.linux": ["-l"],
+    "python.dataScience.runStartupCommands": [
+        "%load_ext autoreload", "%autoreload 2"
+    ]
 }
