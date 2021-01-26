@@ -20,7 +20,7 @@
         "**/external/**": true
       },
     "terminal.integrated.shellArgs.linux": ["-l"],
-    "python.dataScience.runStartupCommands": [
+    "jupyter.runStartupCommands": [
         "%load_ext autoreload", "%autoreload 2"
     ]
 }
