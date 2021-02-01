@@ -3,6 +3,7 @@
     "editor.smoothScrolling": true,
     "editor.minimap.enabled": false, 
     "editor.lineNumbers": "relative",
+    "editor.acceptSuggestionOnEnter": "off",
     "vim.insertModeKeyBindings": [
         {
             "before": ["j","k"],
