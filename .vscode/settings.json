@@ -41,5 +41,6 @@
     "terminal.integrated.shellArgs.linux": ["-l"],
     "jupyter.runStartupCommands": [
         "%load_ext autoreload", "%autoreload 2"
-    ]
+    ],
+    "python.languageServer": "Pylance",
 }
