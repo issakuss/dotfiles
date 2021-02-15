@@ -30,6 +30,7 @@
         {"emoji": "🔬 params:", "code": ":microscope: output" , "description": "解析のパラメータが変わった"},
         {"emoji": "🔬 chore:", "code": ":microscope: chore" , "description": "ファイル名など開発環境が変わった"},
 
+        {"emoji": "📝 prfread:", "code": ":memo: prfread" , "description": "他人に見て直してもらった"},
         {"emoji": "📝 contents:", "code": ":memo: chore" , "description": "論文報告内容が変わった"},
         {"emoji": "📝 desc:", "code": ":memo: chore" , "description": "文章表現が変わった"},
         {"emoji": "📝 struct:", "code": ":memo: chore" , "description": "レターなどファイルを追加した, 行を入れ替えた, セクション分けを変えた"},
