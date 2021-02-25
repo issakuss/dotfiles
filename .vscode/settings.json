@@ -4,6 +4,7 @@
     "editor.minimap.enabled": false, 
     "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnEnter": "off",
+    "files.exclude":{"**/._**": true},
     "vim.insertModeKeyBindings": [
         {
             "before": ["j","k"],
