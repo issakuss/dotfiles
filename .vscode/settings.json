@@ -11,10 +11,14 @@
         }
     ], 
     "[python]": {
-        "editor.rulers": [
-            79
-        ]
+        "editor.rulers": [79]
     },
+
+    "files.associations": {"*.m": "matlab"},
+    "[matlab]": {"files.encoding": "windows1252"},
+    "matlab.matlabpath": "/home/cns/matlab/r2020a/bin/matlab",
+    "matlab.mlintpath": "/home/cns/matlab/r2020a/bin/glnxa64/mlint",
+
     "git.ignoreLegacyWarning": true,
     "files.watcherExclude": {
         "**/.git/**": true,
