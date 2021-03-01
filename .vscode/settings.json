@@ -5,20 +5,11 @@
     "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnEnter": "off",
     "files.exclude":{"**/._**": true},
-    "vim.insertModeKeyBindings": [
-        {
-            "before": ["j","k"],
-            "after": ["<Esc>"]
-        }
-    ], 
-    "[python]": {
-        "editor.rulers": [79]
-    },
+    "terminal.integrated.shellArgs.linux": ["-l"],
 
-    "files.associations": {"*.m": "matlab"},
-    "[matlab]": {"files.encoding": "windows1252"},
-    "matlab.matlabpath": "/home/cns/matlab/r2020a/bin/matlab",
-    "matlab.mlintpath": "/home/cns/matlab/r2020a/bin/glnxa64/mlint",
+
+    "vim.insertModeKeyBindings": [{"before": ["j","k"], "after": ["<Esc>"]}], 
+
 
     "git.ignoreLegacyWarning": true,
     "files.watcherExclude": {
@@ -44,9 +35,19 @@
         {"emoji": "📝 journal:", "code": ":memo: chore" , "description": "ジャーナルに対応したのみの変更（レターのジャーナル名, セクション名）"},
     ],
     "gitmoji.onlyUseAdditionalEmojis": true,
-    "terminal.integrated.shellArgs.linux": ["-l"],
-    "jupyter.runStartupCommands": [
-        "%load_ext autoreload", "%autoreload 2"
-    ],
+
+
+    "jupyter.runStartupCommands": ["%load_ext autoreload", "%autoreload 2"],
     "python.languageServer": "Pylance",
+    "[python]": {
+        "editor.rulers": [79]
+    },
+
+
+    "files.associations": {"*.m": "matlab"},
+    "matlab.matlabpath": "/home/cns/matlab/r2020a/bin/matlab",
+    "matlab.mlintpath": "/home/cns/matlab/r2020a/bin/glnxa64/mlint",
+    "[matlab]": {
+        "files.encoding": "windows1252"
+    },
 }
