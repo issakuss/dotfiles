@@ -44,6 +44,13 @@
     },
 
 
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false,
+        "editor.renderWhitespace": "trailing",
+        "files.insertFinalNewline": true
+    },
+
+
     "files.associations": {"*.m": "matlab"},
     "matlab.matlabpath": "/home/cns/matlab/r2020a/bin/matlab",
     "matlab.mlintpath": "/home/cns/matlab/r2020a/bin/glnxa64/mlint",
