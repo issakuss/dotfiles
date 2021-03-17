@@ -39,6 +39,7 @@
 
     "jupyter.runStartupCommands": ["%load_ext autoreload", "%autoreload 2"],
     "python.languageServer": "Pylance",
+    "autoDocstring.docstringFormat": "numpy",
     "[python]": {
         "editor.rulers": [79]
     },
