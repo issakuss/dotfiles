@@ -1,21 +1,24 @@
 {
+    // Editor
     "window.zoomLevel": 1,
+    "workbench.startupEditor": "none",
     "editor.smoothScrolling": true,
     "editor.minimap.enabled": false, 
     "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnEnter": "off",
     "files.exclude":{"**/._**": true},
-    "terminal.integrated.shellArgs.linux": ["-l"],
+    "terminal.integrated.defaultProfile.linux#": "/bin/bash",
 
-
+    // Vim
     "vim.insertModeKeyBindings": [{"before": ["j","k"], "after": ["<Esc>"]}], 
 
-
+    // Git
     "git.ignoreLegacyWarning": true,
     "files.watcherExclude": {
         "**/.git/**": true,
         "**/external/**": true
       },
+    "gitmoji.onlyUseAdditionalEmojis": true,
     "gitmoji.additionalEmojis": [
         {"emoji": "🔬 feat:", "code": ":microscope: feat" , "description": "機能が変わった"},
         {"emoji": "🔬 fix:", "code": ":microscope: fix" , "description": "バグを直した"},
@@ -34,28 +37,20 @@
         {"emoji": "📝 chore:", "code": ":memo: chore" , "description": "Pandocなど執筆環境が変わった"},
         {"emoji": "📝 journal:", "code": ":memo: chore" , "description": "ジャーナルに対応したのみの変更（レターのジャーナル名, セクション名）"},
     ],
-    "gitmoji.onlyUseAdditionalEmojis": true,
 
+    // Python
+    "[python]": {"editor.rulers": [79]},
+    "python.pythonPath": "/usr/bin/python",
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "/usr/local/bin/pylint",
 
-    "jupyter.runStartupCommands": ["%load_ext autoreload", "%autoreload 2"],
-    "python.languageServer": "Pylance",
-    "autoDocstring.docstringFormat": "numpy",
-    "[python]": {
-        "editor.rulers": [79]
-    },
-
-
+    // Markdown
     "[markdown]": {
         "files.trimTrailingWhitespace": false,
         "editor.renderWhitespace": "trailing",
         "files.insertFinalNewline": true
     },
 
-
-    "files.associations": {"*.m": "matlab"},
-    "matlab.matlabpath": "/home/cns/matlab/r2020a/bin/matlab",
-    "matlab.mlintpath": "/home/cns/matlab/r2020a/bin/glnxa64/mlint",
-    "[matlab]": {
-        "files.encoding": "windows1252"
-    },
+    // Additional
 }
