@@ -11,6 +11,7 @@
 
     // Vim
     "vim.insertModeKeyBindings": [{"before": ["j","k"], "after": ["<Esc>"]}], 
+    "vim.normalModeKeyBindings": [{"before": ["<CR>"], "after": ["i","<CR>","<Esc>"]}],
 
     // Git
     "git.ignoreLegacyWarning": true,
