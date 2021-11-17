@@ -7,7 +7,6 @@
     "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnEnter": "off",
     "files.exclude":{"**/._**": true},
-    "terminal.integrated.defaultProfile.linux#": "/bin/bash",
 
     // Vim
     "vim.insertModeKeyBindings": [{"before": ["j","k"], "after": ["<Esc>"]}], 
