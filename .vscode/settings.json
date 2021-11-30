@@ -7,10 +7,10 @@
     "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnEnter": "off",
     "files.exclude":{"**/._**": true},
+    "terminal.integrated.defaultProfile.linux#": "/bin/bash",
 
     // Vim
     "vim.insertModeKeyBindings": [{"before": ["j","k"], "after": ["<Esc>"]}], 
-    "vim.normalModeKeyBindings": [{"before": ["<CR>"], "after": ["i","<CR>","<Esc>"]}],
 
     // Git
     "git.ignoreLegacyWarning": true,
@@ -23,19 +23,17 @@
         {"emoji": "🔬 feat:", "code": ":microscope: feat" , "description": "機能が変わった"},
         {"emoji": "🔬 fix:", "code": ":microscope: fix" , "description": "バグを直した"},
         {"emoji": "🔬 docs:", "code": ":microscope: docs" , "description": "ドキュメントのみ変わった"},
-        {"emoji": "🔬 style:", "code": ":microscope: style" , "description": "空行や改行などスタイルのみ変わった"},
         {"emoji": "🔬 refactor:", "code": ":microscope: refactor" , "description": "リファクタリング"},
         {"emoji": "🔬 output:", "code": ":microscope: output" , "description": "図などアプトプットの見た目が変わった"},
         {"emoji": "🔬 params:", "code": ":microscope: output" , "description": "解析のパラメータが変わった"},
         {"emoji": "🔬 chore:", "code": ":microscope: chore" , "description": "ファイル名など開発環境が変わった"},
 
-        {"emoji": "📝 prfread:", "code": ":memo: prfread" , "description": "他人に見て直してもらった"},
-        {"emoji": "📝 contents:", "code": ":memo: chore" , "description": "論文報告内容が変わった"},
-        {"emoji": "📝 desc:", "code": ":memo: chore" , "description": "文章表現が変わった"},
-        {"emoji": "📝 struct:", "code": ":memo: chore" , "description": "レターなどファイルを追加した, 行を入れ替えた, セクション分けを変えた"},
-        {"emoji": "📝 typo:", "code": ":memo: chore" , "description": "タイポを修正した"},
-        {"emoji": "📝 chore:", "code": ":memo: chore" , "description": "Pandocなど執筆環境が変わった"},
-        {"emoji": "📝 journal:", "code": ":memo: chore" , "description": "ジャーナルに対応したのみの変更（レターのジャーナル名, セクション名）"},
+        {"emoji": "📝 content:", "code": ":memo: content" , "description": "論文内容を修正した"},
+        {"emoji": "📝 prfread:", "code": ":memo: prfread" , "description": "他人による修正、修正への対応"},
+        {"emoji": "📝 sturct:", "code": ":memo: struct" , "description": "レターなどファイルを追加した, 行を入れ替えた, セクション分けを変えた"},
+        {"emoji": "📝 journal:", "code": ":memo: journal" , "description": "ジャーナル対応のための変更（レターのジャーナル名, セクション名）"},
+        {"emoji": "📝 typo:", "code": ":memo: typo" , "description": "タイポや細かいミスを修正した"},
+        {"emoji": "📝 chore:", "code": ":memo: chore" , "description": "執筆環境の変更, ファイルを出力した, フォーマットを調整した, 他"},
     ],
 
     // Python
@@ -51,6 +49,7 @@
         "editor.renderWhitespace": "trailing",
         "files.insertFinalNewline": true
     },
+    "jupyter.debugJustMyCode": false,
 
     // Additional
 }
