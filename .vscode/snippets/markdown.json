@@ -1,0 +1,42 @@
+{
+	"put comment": {
+		"prefix": "comment",
+		"body": [
+			"[$1]{.comment-start}[]{.comment-end}"
+		],
+		"description": "Comment in the 1st [], target sentence is to be before the 2nd []"
+	},
+
+	"put reference": {
+		"prefix": "ref",
+		"body": [
+			"::: {#refs}",
+			":::"
+		],
+		"description": "Reference starts here"
+	},
+
+	"custom style": {
+		"prefix": "stylecustom",
+		"body": [
+			"::: {custom-style=\"$1\"}",
+			":::"
+		],
+		"description": "Custom style starts here"
+	},
+	
+	"orient page": {
+		"prefix": "horizontalpage",
+		"body": [
+			"```{=openxml}",
+			"<w:p><w:pPr><w:sectPr><w:type w:val=\"nextPage\" /></w:sectPr></w:pPr></w:p>",
+			"```",
+			"$1",
+			"```{=openxml}",
+			"<w:p><w:pPr><w:sectPr><w:pgSz w:w=\"16839\" w:h=\"11907\" w:orient=\"landscape\"/></w:sectPr></w:pPr></w:p>",
+			"```"
+		],
+		"description": "Orient page horizontal"
+	}
+
+}

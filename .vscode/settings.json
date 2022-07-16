@@ -47,7 +47,12 @@
     "[markdown]": {
         "files.trimTrailingWhitespace": false,
         "editor.renderWhitespace": "trailing",
-        "files.insertFinalNewline": true
+        "files.insertFinalNewline": true,
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
     },
     "jupyter.debugJustMyCode": false,
 
