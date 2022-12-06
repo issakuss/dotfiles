@@ -7,6 +7,14 @@
 		"description": "Comment in the 1st [], target sentence is to be before the 2nd []"
 	},
 
+	"highlight": {
+		"prefix": "hl",
+		"body": [
+			"]{custom-style=\"hl\"}"
+		],
+		"description": "Highlight betwenn []"
+	},
+
 	"put reference": {
 		"prefix": "ref",
 		"body": [
