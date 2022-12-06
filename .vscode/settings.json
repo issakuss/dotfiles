@@ -7,7 +7,7 @@
     "editor.lineNumbers": "relative",
     "editor.acceptSuggestionOnEnter": "off",
     "files.exclude":{"**/._**": true},
-    "terminal.integrated.defaultProfile.linux#": "/bin/bash",
+    "terminal.integrated.defaultProfile.linux": "/bin/bash",
 
     // Vim
     "vim.insertModeKeyBindings": [{"before": ["j","k"], "after": ["<Esc>"]}], 
@@ -18,8 +18,8 @@
         "**/.git/**": true,
         "**/external/**": true
       },
-    "gitmoji.onlyUseAdditionalEmojis": true,
-    "gitmoji.additionalEmojis": [
+    "gitmoji.onlyUseCustomEmoji": true,
+    "gitmoji.addCustomEmoji": [
         {"emoji": "🔬 feat:", "code": ":microscope: feat" , "description": "機能が変わった"},
         {"emoji": "🔬 fix:", "code": ":microscope: fix" , "description": "バグを直した"},
         {"emoji": "🔬 docs:", "code": ":microscope: docs" , "description": "ドキュメントのみ変わった"},
@@ -38,9 +38,9 @@
 
     // Python
     "[python]": {"editor.rulers": [79]},
-    "python.pythonPath": "/usr/bin/python",
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
+    "python.terminal.executeInFileDir": true,
     "python.linting.pylintPath": "/usr/local/bin/pylint",
 
     // Markdown
