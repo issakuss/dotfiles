@@ -55,6 +55,10 @@
         }
     },
     "jupyter.debugJustMyCode": false,
+    "deepl.apiKey": "ff61e382-88b3-8b5e-45fd-d7404929b80e:fx",
 
+    "japanese-proofreading.textlint.大かっこ［］": false,  // Not recognized as proper option, but works.
+    "japanese-proofreading.textlint.全角文字と半角文字の間": false,
+    "japanese-proofreading.textlint.全角文字どうし": false
     // Additional
 }
