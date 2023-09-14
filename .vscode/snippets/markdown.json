@@ -45,6 +45,21 @@
 			"```"
 		],
 		"description": "Orient page horizontal"
-	}
+	},
 
+	"highlight": {
+		"prefix": "hl",
+		"body": [
+			"]{custom-style=\"hl\"}"
+		],
+		"description": "highlight to here"
+	},
+
+	"crossref table": {
+		"prefix": "crtbl",
+		"body": [
+			"%{cr:tbl.$1}"
+		],
+		"description": "Embed crossref-like name"
+	},
 }
