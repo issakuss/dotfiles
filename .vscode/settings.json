@@ -1,5 +1,7 @@
 {
     // Editor
+    "security.workspace.trust.untrustedFiles": "open",
+    "terminal.integrated.inheritEnv": false,
     "window.zoomLevel": 1,
     "workbench.startupEditor": "none",
     "editor.smoothScrolling": true,
@@ -35,6 +37,9 @@
         {"emoji": "📝 typo:", "code": ":memo: typo" , "description": "タイポや細かいミスを修正した"},
         {"emoji": "📝 chore:", "code": ":memo: chore" , "description": "執筆環境の変更, ファイルを出力した, フォーマットを調整した, 他"},
     ],
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
 
     // Python
     "[python]": {"editor.rulers": [79]},
@@ -42,6 +47,7 @@
     "python.linting.pylintEnabled": true,
     "python.terminal.executeInFileDir": true,
     "python.linting.pylintPath": "/usr/local/bin/pylint",
+    "jupyter.notebookFileRoot": "${workspaceFolder}"
 
     // Markdown
     "[markdown]": {
@@ -55,7 +61,6 @@
         }
     },
     "jupyter.debugJustMyCode": false,
-
 
     "japanese-proofreading.textlint.大かっこ［］": false,  // Not recognized as proper option, but works.
     "japanese-proofreading.textlint.全角文字と半角文字の間": false,
